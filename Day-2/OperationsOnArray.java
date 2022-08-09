@@ -16,5 +16,14 @@ public class OperationsOnArray {
                 }
                 mean = total/length;
                 System.out.println("The mean value is: "+mean);
+         System.out.println("---------------------------");
+                Arrays.sort(array);
+                if(length%2==0)
+                    median= array[length/2];
+                else
+                    median=(array[(length - 1) / 2] + array[length / 2]) / 2;
+
+                System.out.println(" The median is :" +median);
+        System.out.println("---------------------------");
     }
     }
